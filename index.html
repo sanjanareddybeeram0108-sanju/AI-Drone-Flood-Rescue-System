@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Rescue System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌊 Flood Rescue System</h1>
+
+        <p class="subtitle">
+            Victim enters the Emergency Shortcode
+        </p>
+
+        <input
+            type="text"
+            id="code"
+            placeholder="Enter Emergency Code">
+
+        <br><br>
+
+        <button onclick="sendAlert()">
+            Send Emergency Alert
+        </button>
+        <button onclick="makeEmergencyCall()">📞 Make Emergency Call</button>
+
+        <div id="message"></div>
+
+<hr>
+
+<h2>🌊 Flood Area Map</h2>
+
+<div class="map">
+    <div class="mesh-line line1"></div>
+    <div class="mesh-line line2"></div>
+    <div class="mesh-line line3"></div>
+
+    <div class="drone drone1">🛸 Drone 1</div>
+
+    <div class="drone drone2">🛸 Drone 2</div>
+
+    <div class="drone drone3">🛸 Drone 3</div>
+
+    <div class="victim" id="victimMarker">📍 Victim</div>
+
+    <div class="rescue" id="rescueTeam">🚑 Rescue Team</div>
+    <div class="command-center" id="commandCenter">
+              🖥️ AI Command Center
+    </div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

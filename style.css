@@ -1,0 +1,219 @@
+body{
+
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:#dff6ff;
+
+}
+
+.container{
+
+    width:400px;
+    margin:100px auto;
+    text-align:center;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px gray;
+
+}
+
+h1{
+
+    color:#0066cc;
+
+}
+
+.subtitle{
+
+    color:#555;
+    font-size:18px;
+
+}
+
+input{
+
+    width:250px;
+    padding:10px;
+    font-size:16px;
+    border-radius:8px;
+    border:1px solid gray;
+
+}
+
+button{
+
+    background:#007bff;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#0056b3;
+
+}
+
+#message{
+
+    margin-top:25px;
+    font-size:20px;
+    color:green;
+    font-weight:bold;
+
+}
+.map{
+
+    margin-top:30px;
+    height:350px;
+    border:3px solid #333;
+    border-radius:10px;
+    background:#b3e5fc;
+    position:relative;
+
+}
+
+.drone{
+
+    position:absolute;
+    background:white;
+    padding:5px;
+    border-radius:8px;
+
+}
+
+.drone1{
+
+    top:20px;
+    left:30px;
+
+}
+
+.drone2{
+
+    top:40px;
+    right:40px;
+
+}
+
+.drone3{
+
+    bottom:40px;
+    left:180px;
+
+}
+
+.victim{
+
+    position:absolute;
+
+    bottom:80px;
+
+    right:30px;
+
+    font-size:24px;
+
+}
+
+.rescue{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:20px;
+
+    font-size:22px;
+
+}
+.rescue {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: all 4s ease-in-out;
+}
+.command-center {
+    position: absolute;
+    top: 150px;
+    right: 20px;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.mesh-active {
+    animation: meshPulse 1s infinite;
+}
+
+@keyframes meshPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.mesh-line {
+    position: absolute;
+    height: 3px;
+    background: #0066ff;
+    transform-origin: left center;
+    display: none;
+    z-index: 1;
+}
+
+.line1 {
+    width: 180px;
+    top: 70px;
+    left: 70px;
+    transform: rotate(25deg);
+}
+
+.line2 {
+    width: 200px;
+    top: 150px;
+    left: 200px;
+    transform: rotate(-35deg);
+}
+
+.line3 {
+    width: 150px;
+    top: 290px;
+    left: 190px;
+    transform: rotate(-45deg);
+}
+
+.mesh-line.active {
+    display: block;
+    animation: signalPulse 1s infinite;
+}
+
+@keyframes signalPulse {
+
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
