@@ -347,8 +347,6 @@ function makeEmergencyCall() {
               "<p>🎙️ Emergency voice channel is active.</p>" +
               "<p>Waiting for the affected person's message...</p>" +
               "<br>" +
-              "<button onclick='processVoiceMessage()'>🎤 Simulate Full Voice Message</button>" +
-              "<br><br>" +
               "<button onclick='processShortCall()'>📞 Simulate Short Emergency Call</button>" +
               "<br><br>" +
               "<button onclick='startRecording()'>🎙️ Start Real Voice Recording</button>" +
