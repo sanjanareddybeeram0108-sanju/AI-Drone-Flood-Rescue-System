@@ -51,7 +51,7 @@ button{
     font-size:18px;
     border-radius:8px;
     cursor:pointer;
-    margin: 10px;
+    
 
 }
 
@@ -213,8 +213,13 @@ button:hover{
     50% {
         opacity: 1;
     }
+   
 
     100% {
         opacity: 0.2;
     }
+}
+button{
+    display:block;
+    margin:15px auto;
 }
