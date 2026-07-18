@@ -7,53 +7,36 @@ function sendAlert() {
 
     let code = document.getElementById("code").value;
 
-    if (code == "") {
+    if (code === "") {
         alert("Please enter the Emergency Code");
         return;
     }
 
     document.getElementById("message").innerHTML =
-    "📡 Connecting to Hybrid Drone...";
-
-    setTimeout(function(){
-
-        document.getElementById("message").innerHTML =
-        "✅ Hybrid Drone Connected<br><br>📤 Forwarding to AI...";
-
-    },2000);
+        "<h3>🚨 Emergency Alert Sent Successfully</h3>" +
+        "<p>Activating drone network for location detection...</p>";
 
     setTimeout(function () {
 
-    document.getElementById("message").innerHTML =
-        "<h3>🤖 AI Emergency Assistant</h3>" +
+        document.getElementById("message").innerHTML =
+            "<h3>🛸 Drone Network Activated</h3>" +
+            "<p>Searching for the affected person's location...</p>";
 
-        "<p>How many people are with you?</p>" +
-        "<input id='people' type='number' min='1' placeholder='Enter number'>" +
+    }, 2000);
 
-        "<p>Is anyone injured?</p>" +
-        "<select id='injured'>" +
-            "<option value='no'>No</option>" +
-            "<option value='yes'>Yes</option>" +
-        "</select>" +
+    setTimeout(function () {
 
-        "<p>Are there children or elderly people?</p>" +
-        "<select id='vulnerable'>" +
-            "<option value='no'>No</option>" +
-            "<option value='yes'>Yes</option>" +
-        "</select>" +
+        // Default values because no victim details were collected
+        people = 1;
+        priority = "HIGH 🔴";
 
-        "<p>What is the water level?</p>" +
-        "<select id='waterLevel'>" +
-            "<option value='low'>Knee Level</option>" +
-            "<option value='medium'>Waist Level</option>" +
-            "<option value='high'>Roof Level</option>" +
-        "</select>" +
+        document.getElementById("message").innerHTML =
+            "<h3>📍 Location Detection</h3>" +
+            "<p>Emergency alert received successfully.</p>" +
+            "<p>Drone network is ready to estimate the location.</p>" +
+            "<button onclick='checkLocation()'>Detect Location</button>";
 
-        "<br><br>" +
-
-        "<button onclick='nextStep()'>Submit Emergency Details</button>";
-
-}, 4000);
+    }, 4000);
 }
 
 function nextStep() {
