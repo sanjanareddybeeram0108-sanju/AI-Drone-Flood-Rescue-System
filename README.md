@@ -1,6 +1,11 @@
 # AI-Powered Flood Emergency Rescue System
 
 ## Overview
+#Pictorial Representation
+
+![AI Flood Emergency Rescue System Flowchart]
+(system-flowchart.png)
+
 
 This project is a **Proof of Concept (PoC)** that demonstrates how technology could help improve emergency response during flood disasters.
 
